@@ -17,6 +17,7 @@
 		DC22B69622F0A4B400781F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC22B69522F0A4B400781F14 /* Assets.xcassets */; };
 		DC22B69922F0A4B400781F14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC22B69722F0A4B400781F14 /* LaunchScreen.storyboard */; };
 		DC22B6A422F0A4B400781F14 /* FirstCocoapodsLibExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC22B6A322F0A4B400781F14 /* FirstCocoapodsLibExampleTests.swift */; };
+		DC22B6AD22F0A66700781F14 /* FirstCocoapodsLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC22B6AC22F0A66700781F14 /* FirstCocoapodsLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		DC22B69F22F0A4B400781F14 /* FirstCocoapodsLibExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstCocoapodsLibExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC22B6A322F0A4B400781F14 /* FirstCocoapodsLibExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCocoapodsLibExampleTests.swift; sourceTree = "<group>"; };
 		DC22B6A522F0A4B500781F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC22B6AC22F0A66700781F14 /* FirstCocoapodsLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCocoapodsLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				DC22B66E22F0A33500781F14 /* FirstCocoapodsLib.h */,
 				DC22B66F22F0A33500781F14 /* Info.plist */,
+				DC22B6AC22F0A66700781F14 /* FirstCocoapodsLib.swift */,
 			);
 			path = FirstCocoapodsLib;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				TargetAttributes = {
 					DC22B66A22F0A33500781F14 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					DC22B67322F0A33500781F14 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -322,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC22B6AD22F0A66700781F14 /* FirstCocoapodsLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +516,7 @@
 		DC22B68022F0A33500781F14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -528,6 +534,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Ravindra.FirstCocoapodsLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -536,6 +543,7 @@
 		DC22B68122F0A33500781F14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -561,6 +569,7 @@
 		DC22B68322F0A33500781F14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7UW595R87A;
 				INFOPLIST_FILE = FirstCocoapodsLibTests/Info.plist;
@@ -579,6 +588,7 @@
 		DC22B68422F0A33500781F14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7UW595R87A;
 				INFOPLIST_FILE = FirstCocoapodsLibTests/Info.plist;
